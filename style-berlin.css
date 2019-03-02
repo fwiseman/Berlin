@@ -406,9 +406,8 @@ img {
   font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
-	padding:.3em 2.5em;
+	padding:.1em 2.5em;
 	border-radius: 2em;
-
 }
 
 .btn:hover {
@@ -424,33 +423,32 @@ img {
 	top:0;
 	background: black;
 	overflow: hidden;
-	padding-top: 0;
-	padding-left: 2em;
-	margin-top: 0;
+	padding: 1.5em 2em 1.5em 1.5em;
+	margin: 0;
 	width:100%;
 	z-index: 1;
-
+  opacity:0.9
 }
 
 .nav a{
 	float: left;
-    color: white;
+    color: rgb(100,100,100);
     text-align: center;
-    padding: 1em 1.2em 1em 0em;
+    padding: 0 .5em ;
     text-decoration: none;
     font-size:1.2em;
 }
 
-#nav-active  {
+#nav-active {
 	float: left;
-    color: #FC0B56;
+    color: white;
     text-align: center;
-    padding: 1em 1.2em 1em 0em;
     text-decoration: none;
     font-size:1.2em;
+    font-weight: bold;
 }
 .nav a:hover {
-	color: #5d5d5d;
+	color:rgb(150,150,150) ;
 }
 
 
@@ -481,15 +479,17 @@ img {
 .hero  {
 	padding-bottom: 0;
   margin-top: 20vh;
-	font-size: 2.7vw;
+	font-size: 5.5vw;
 	line-height: 2em;
 	text-align: center;
   font-weight: lighter;
 }
 .hero h3 {
-  margin-bottom: -1em;
+  font-size: 4vw;
+  margin:-2em 0;
   padding-top: 0;
-  color:#464646;
+  color: white;
+  opacity:0.3;
 }
 
 #img_1 {
@@ -510,14 +510,17 @@ img {
 
 #section-a {
 	background: #141319;
-	color: #8B8B8B;
+	color: white;
 	padding-bottom:2em;
 	padding-top: 1em;
+}
+#section-a p {
+  opacity:0.4;
 }
 
 .view {
   margin-top: 2em;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 /* ---------------------------THE DIFFERENT SECTION HEADINGS ------------------- */
@@ -526,7 +529,7 @@ img {
 }
 .topic-head {
   text-align: left;
-  border-left: .4em solid;
+  border-left: .5em solid;
   border-image:
     linear-gradient(
       to bottom,
@@ -536,21 +539,25 @@ img {
   padding:0 1em;
 }
 .topic-head h4 {
-  color:#464646;
-  margin-bottom: -1em;
-  font-size: 1.5em;
-
+  color:white;
+  opacity:0.3;
+  margin-bottom: -1.5em;
+  font-size: 6vw;
 }
 .topic-head h2 {
   color:white;
+  font-size: 11vw;
+  line-height: 1.1em;
 }
+
 
 /*  ---------------------  CONTENT -----------------------------*/
 
 .content {
-  margin-top:-3em;
+  margin-top:-2em;
   padding-top: 0;
   text-align: left;
+  font-size: 1.3em;
 }
 
 * {
@@ -561,6 +568,7 @@ img {
 .container-flex {
   display:flex;
   flex-wrap: wrap;
+  font-size: 1.6em;
 }
 .container-flex div{
   padding 1.5em 0;
@@ -571,6 +579,8 @@ img {
 }
 .box {
   margin:1em .7em;
+  padding:.5em;
+  border-top: 2px solid rgba(150,150,150,0.5);
 }
 .box h6 {
   color:white;
@@ -583,178 +593,134 @@ img {
 }
 /*  different topic boxes*/
 .box-1 {
-  flex:1;
+  width:90%;
+  float:left;
 }
 .box-2 {
-  flex:1;
+  width:90%;
+  float:left;
 }
 .box-3 {
-  flex:1;
+  width:90%;
+  float:left;
 }
 /*   differnt potential problem boxes*/
 .box-4 {
-  width:40%;
+  width:90%;
   float:left;
 }
 .box-5 {
-  width:40%;
+  width:90%;
   float:left;
 }
 .box-6 {
-  width:40%;
+  width:90%;
   float:left;
 }
 .box-7 {
-  width:40%;
+  width:90%;
   float:left;
 }
 
+/*  ------------------ PROBLEMS UL --------------------------*/
+
+ul {
+  text-align: left;
+  font-size: 4.5vw;
+}
+.problems ul {
+  list-style-image: url('#');
+}
+.problems li {
+  margin: 0 0 1em 0  ;
+}
+.problems h3 {
+  text-align: left;
+  margin-bottom :-.5em;;
+  padding:0;
+  font-size: 7vw;
+}
 
 
+/*  ------------------------ SOLUTION + SECTION B ------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Section B --------------------------------------- */
 
 #section-b {
-	padding: 2em 1em 1em;
-	background-color: #4b0096;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width:100vw;
-	z-index: -1;
-}
-
-#section-b ul {
-	list-style: none;
-	mergin: 0;
-	padding:0;
-}
-
-#section-b li {
-	margin-bottom: 1em;
-	background:#fbfbfb;
-	color: grey;
-	border-radius: 5px;
-	box-shadow: 0px 0px 32px rgb(50,50,50,1);
-}
-
-#section-b li h6 {
-	margin-top: 0;
-	opacity:0.7;
-}
-#section-b li p{
-	text-align: left;
-}
-
-#section-b li a {
-	text-decoration: none;
-	color: #252627;
-	font-size: 2.5em;
-}
-#section-b li a:hover {
-	color: #9400ff;
-}
-
-.rotate:hover {
-	font-size: 1.3em;
-	-ms-transform: rotate(-90deg); /* IE 9 */
-  -webkit-transform: rotate(-90deg); /* Safari */
-  transform: rotate(-90deg);
-}
-
-
-.card-content {
-	padding: 1.5em;
-}
-
-/* Section C ----------------------------------------*/
-
-#section-c {
-	background:#fbfbfb;
-	color: #5D5D5D;
-	padding: 3em;
-}
-
-#section-c h4 {
-	margin: 0;
-}
-#section-c h3 {
-	margin-top: 10px;
-	color: #7300FF;
-}
-#section-c p {
-	color:#5D5D5D;
-	font-size: .8em;
-}
-
-/*Section D / Boxes ------------------------------ --*/
-
-#section-d .box {
-	padding: 2em;
-	color: #fff;
-}
-
-#section-d .box:first-child {
-	background: #FC0B56;
-}
-
-/*  SECTION E */
-
-#section-e {
-	background: #121c26;
-	color: #fbfbc9;
+	background: #fbfbfb;
+	color: black;
 	padding-bottom:2em;
 	padding-top: 1em;
-	font-size: 1.1em;
 }
-#section-e h4 {
-	font-weight: bold;
-	color: white;
-	font-weight:0.9;
-	}
-#section-e li {
-	margin:auto;
-	text-align: left;
-	margin-left: 3em;
-}
-#section-e p {
-	opacity:.9;
-	font-size: .8em;
-	margin: 0 2em;
+#section-b p {
+  opacity:0.4;
 }
 
-#section-e h4 {
-	margin-bottom: 0;
+#section-b .topic-head-wrap {
+  margin:5em 0;
+}
+#section-b .topic-head {
+  text-align: left;
+  border-left: 1em solid;
+  border-image:
+    linear-gradient(
+      to bottom,
+      #9900FF,
+      #0000FF
+    ) 1 100%;
+  padding:0 1em;
+  margin-left: -1em;
+}
+#section-b .topic-head h4 {
+  color:black;
+  opacity:0.5;
+  margin-bottom: -1.1em;
+  font-size: 7vw;
+}
+#section-b .topic-head h2 {
+  color:black;
+  font-size: 10vw;
+  line-height: 1.1em;
+}
+#section-b .topic-head h1 {
+  font-size: 15vw;
+  margin-bottom: -.5em;
+  margin-top: 0;
+  padding:0;
 }
 
-.need h4{
-	color : white;
-	opacity:0.8;
+/* ---------------------- BENEFITS UL ------------------ */
+
+.benefits ul {
+  list-style-image: url('#');
 }
+.benefits li {
+  margin: 0 0 1em 0  ;
+}
+.benefits h3 {
+  text-align: left;
+  margin-bottom :-.5em;;
+  padding:0;
+  font-size: 7vw;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer --------------------------------------------*/
 
 #main-footer {
-	padding:2em;
-	background:#FC0B56;
+	padding:5em 2em;
+	background:black;
 	color:white;
 	text-align: center;
+  font-weight: lighter;
+  font-size: 0.7em;
 }
 
 #main-footer p {
@@ -765,10 +731,12 @@ img {
 
 #main-footer a {
 	text-decoration: none;
-	color:black;
+	color:white;
+  opacity:0.9;
 }
 #main-footer a:hover {
-	color:yellow;
+	color:white;
+  opacity:0.3;
 }
 
 /* Media Queries -------------------------------------*/
